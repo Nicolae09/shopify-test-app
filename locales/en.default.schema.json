@@ -219,17 +219,17 @@
   },
   "sections": {
     "announcement-bar": {
-      "name": "Profile link bar",
+      "name": "Link bar",
       "blocks": {
         "announcement": {
-          "name": "Profile link",
+          "name": "Link",
           "settings": {
             "text": {
               "link_text": {
-                "label": "Text"
+                "label": "Link text"
               },
               "link_url": {
-                "label": "Text2"
+                "label": "Link URL"
               }
             },
             "color_scheme": {
