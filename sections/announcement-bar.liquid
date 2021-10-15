@@ -7,7 +7,7 @@
             <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
           {%- endif -%}
               <p class="announcement-bar__message h5">
-                {{ block.settings.text | escape }}
+                {{ block.settings.text }}
                 {%- if block.settings.link != blank -%}
                   {% render 'icon-arrow' %}
                 {%- endif -%}
@@ -32,12 +32,12 @@
         {
           "type": "text",
           "id": "text",
-          "default": "Welcome to our store",
+          "default": "find me at",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
         },
         {
           "type": "select",
-          "id": "color_scheme",
+          "id": "color_scheme1",
           "options": [
             {
               "value": "background-1",
