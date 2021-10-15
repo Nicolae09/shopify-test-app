@@ -34,6 +34,10 @@
   padding-bottom: 5rem;
 }
 
+.grinteq-btn {
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 750px) {
   .rich-text:not(.rich-text--full-width),
   .rich-text--full-width.color-background-1 {
