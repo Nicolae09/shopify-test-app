@@ -1819,6 +1819,7 @@ input[type='checkbox'] {
 }
 
 .announcement-bar__link .announcement-bar__message {
+  display: flex;
   padding: 0;
 }
 

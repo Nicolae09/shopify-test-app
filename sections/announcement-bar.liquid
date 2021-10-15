@@ -4,10 +4,10 @@
         <div class="announcement-bar color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
             {%- if block.settings.link_text != blank and block.settings.link_url != blank -%}
                 <a href="{{ block.settings.link_url }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
-                <p class="announcement-bar__message h5">
-                    {{ block.settings.link_text }}
-                    {% render 'icon-arrow' %}
-                </p>
+                    <p class="announcement-bar__message h5">
+                        {{ block.settings.link_text }}
+                        {% render 'icon-arrow' %}
+                    </p>
                 </a>
             {%- endif -%}
         </div>
