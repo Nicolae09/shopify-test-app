@@ -222,7 +222,7 @@
       "name": "Announcement bar",
       "blocks": {
         "announcement": {
-          "name": "Announcement",
+          "name": "Profile link",
           "settings": {
             "text": {
               "label": "Text"
