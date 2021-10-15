@@ -1,0 +1,25 @@
+{{ 'global-popup.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'global-popup.js' | asset_url }}" defer></script>
+
+<div class="global-popup">
+    <div class="global-popup__box">
+        <span class="global-popup__box-close">x</span>
+        <h3 class="global-popup__box-title">Title</h3>
+        <p class="global-popup__box-message">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, voluptatibus.
+        </p>
+        <button
+                type="button"
+                class="global-popup__box-accept"
+        >
+            ok
+        </button>
+    </div>
+</div>
+
+<script>
+    window.onload = () => {
+        typeof GlobalPopup !== 'undefined' && new GlobalPopup();
+    }
+</script>
