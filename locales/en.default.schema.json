@@ -219,7 +219,7 @@
   },
   "sections": {
     "announcement-bar": {
-      "name": "Announcement bar",
+      "name": "Profile link bar",
       "blocks": {
         "announcement": {
           "name": "Profile link",
@@ -246,7 +246,8 @@
               }
             },
             "link": {
-              "label": "Link"
+              "label": "Link",
+              "default": "Find me at"
             }
           }
         }
