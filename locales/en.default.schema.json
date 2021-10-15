@@ -225,8 +225,12 @@
           "name": "Profile link",
           "settings": {
             "text": {
-              "link_text": "Text",
-              "link_url": "Text2"
+              "link_text": {
+                "label": "Text"
+              },
+              "link_url": {
+                "label": "Text2"
+              }
             },
             "color_scheme": {
               "label": "Color scheme",
