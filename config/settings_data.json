@@ -64,6 +64,24 @@
           "enable_language_selector": true,
           "payment_enable": true
         }
+      },
+      "global-popup": {
+        "type": "global-popup",
+        "blocks": {
+          "global-popup-0": {
+            "type": "popup",
+            "settings": {
+              "fade_effect": "on"
+            }
+          }
+        },
+        "block_order": [
+          "global-popup-0"
+        ],
+        "settings": {
+          "popup_title": "Test Title",
+          "popup_message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, voluptatibus."
+        }
       }
     },
     "content_for_index": [
