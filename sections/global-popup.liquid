@@ -2,14 +2,14 @@
 
 <script src="{{ 'global-popup.js' | asset_url }}" defer></script>
 
-<div class="global-popup {% if section.blocks[0].settings.fade_effect == "on" %}popup--fade-effect{% endif %}">
-    {% if section.blocks[0].settings.fade_effect == "on" %}
+<div class="global-popup {% if section.settings.fade_effect == "on" %}popup--fade-effect{% endif %}">
+    {% if section.settings.fade_effect == "on" %}
         {%- assign activeFadeEffect = "true" -%}
     {% endif %}
 
     <div class="global-popup__box">
         <span class="global-popup__box-close">x</span>
-        <h3 class="global-popup__box-title">{{ section.settings.popup_title }}</h3>
+        <h3 class="global-popup__box-title">{{ section.blocks[0].popup_title }}</h3>
         <p class="global-popup__box-message">
             {{ section.settings.popup_message }}
         </p>
@@ -38,38 +38,46 @@
   "class": "global-popup-container",
   "settings": [
     {
-      "type": "text",
-      "id": "popup_title",
-      "default": "Title",
-      "label": "Popup title"
-    },
-    {
-      "type": "text",
-      "id": "popup_message",
-      "default": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, voluptatibus.",
-      "label": "Popup message"
+      "type": "select",
+      "id": "fade_effect",
+      "options": [
+        {
+          "value": "on",
+          "label": "t:sections.global-popup.blocks.popup.settings.on"
+        },
+        {
+          "value": "off",
+          "label": "t:sections.global-popup.blocks.popup.settings.off"
+        }
+      ],
+      "default": "on",
+      "label": "t:sections.global-popup.blocks.popup.settings.fade_effect_label"
     }
   ],
   "blocks": [
     {
-      "type": "popup",
-      "name": "t:sections.global-popup.blocks.popup.name",
+      "type": "popup_title",
+      "name": "Popup title",
+      "limit": 1,
       "settings": [
         {
-          "type": "select",
-          "id": "fade_effect",
-          "options": [
-            {
-              "value": "on",
-              "label": "t:sections.global-popup.blocks.popup.settings.on"
-            },
-            {
-              "value": "off",
-              "label": "t:sections.global-popup.blocks.popup.settings.off"
-            }
-          ],
-          "default": "on",
-          "label": "t:sections.global-popup.blocks.popup.settings.fade_effect_label"
+          "type": "text",
+          "id": "popup_title",
+          "default": "Title",
+          "label": "Popup title"
+        }
+      ]
+    },
+    {
+      "type": "popup_message",
+      "name": "Popup message",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "popup_message",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, voluptatibus.",
+          "label": "Popup message"
         }
       ]
     }
@@ -77,7 +85,10 @@
   "default": {
     "blocks": [
       {
-        "type": "popup"
+        "type": "popup_title"
+      },
+      {
+        "type": "popup_message"
       }
     ]
   }
