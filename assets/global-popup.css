@@ -31,8 +31,16 @@
     right: 5px;
     width: 25px;
     height: 25px;
-    background-color: red;
     border-radius: 50%;
+    border: 1px solid;
+}
+
+.global-popup__box-message {
+    margin: 5px 0 0 0;
+}
+
+.global-popup__box-accept {
+    margin: 10px 0 10px 0;
 }
 
 .popup--fade-effect {
