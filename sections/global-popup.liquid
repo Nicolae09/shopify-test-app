@@ -9,17 +9,10 @@
 
     <div class="global-popup__box">
         <span class="global-popup__box-close">x</span>
-        <h3 class="global-popup__box-title">{{ section.blocks[0] }}</h3>
-
-        {%- for block in section.blocks -%}
-            {%- case block.type -%}
-            {%- when 'message' -%}
-                <p class="global-popup__box-message">
-                    {{ block.settings.popup_message }}
-                </p>
-            {%- endcase -%}
-        {%- endfor -%}
-
+        <h3 class="global-popup__box-title">{{ section.blocks[0].popup_title }}</h3>
+        <p class="global-popup__box-message">
+            {{ section.settings.popup_message }}
+        </p>
         <button
                 type="button"
                 class="global-popup__box-accept"
@@ -63,7 +56,7 @@
   ],
   "blocks": [
     {
-      "type": "title",
+      "type": "popup_title",
       "name": "Popup title",
       "limit": 1,
       "settings": [
@@ -76,7 +69,7 @@
       ]
     },
     {
-      "type": "message",
+      "type": "popup_message",
       "name": "Popup message",
       "limit": 3,
       "settings": [
@@ -92,10 +85,10 @@
   "default": {
     "blocks": [
       {
-        "type": "title"
+        "type": "popup_title"
       },
       {
-        "type": "message"
+        "type": "popup_message"
       }
     ]
   }
