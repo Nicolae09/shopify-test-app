@@ -5,9 +5,9 @@
 <div class="global-popup">
     <div class="global-popup__box">
         <span class="global-popup__box-close">x</span>
-        <h3 class="global-popup__box-title">Title</h3>
+        <h3 class="global-popup__box-title">{{ section.settings.popup_title }}</h3>
         <p class="global-popup__box-message">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, voluptatibus.
+            {{ section.settings.popup_message }}
         </p>
         <button
                 type="button"
@@ -28,6 +28,22 @@
 {
   "name": "t:sections.global-popup.name",
   "max_blocks": 1,
+  "tag": "section",
+  "class": "global-popup-container",
+  "settings": [
+    {
+      "type": "text",
+      "id": "popup_title",
+      "default": "Title",
+      "label": "Popup title"
+    },
+    {
+      "type": "text",
+      "id": "popup_message",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, voluptatibus.",
+      "label": "Popup message"
+    }
+  ],
   "blocks": [
     {
       "type": "popup",
