@@ -23,3 +23,41 @@
         typeof GlobalPopup !== 'undefined' && new GlobalPopup();
     }
 </script>
+
+{% schema %}
+{
+  "name": "t:sections.global-popup.name",
+  "max_blocks": 1,
+  "blocks": [
+    {
+      "type": "popup",
+      "name": "t:sections.global-popup.blocks.popup.name",
+      "settings": [
+        {
+          "type": "select",
+          "id": "fade_effect",
+          "options": [
+            {
+              "value": "on",
+              "label": "t:sections.global-popup.blocks.popup.settings.on"
+            },
+            {
+              "value": "off",
+              "label": "t:sections.global-popup.blocks.popup.settings.off"
+            }
+          ],
+          "default": "on",
+          "label": "t:sections.global-popup.blocks.popup.settings.fade_effect_label"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "popup"
+      }
+    ]
+  }
+}
+{% endschema %}

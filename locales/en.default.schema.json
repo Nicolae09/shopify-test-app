@@ -1889,6 +1889,19 @@
       "presets": {
         "name": "Video"
       }
+    },
+    "global-popup": {
+      "name": "Global Popup",
+      "blocks": {
+        "popup": {
+          "name": "Popup",
+          "settings": {
+            "off": "off",
+            "on": "on",
+            "fade_effect_label": "Popup fade effect"
+          }
+        }
+      }
     }
   }
 }
