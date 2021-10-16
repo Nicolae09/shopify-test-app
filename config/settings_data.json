@@ -67,6 +67,17 @@
       },
       "global-popup": {
         "type": "global-popup",
+        "blocks": {
+          "f5b76166-6f76-41b9-b788-54dfbf2dbf17": {
+            "type": "popup_title",
+            "settings": {
+              "popup_title": "Title"
+            }
+          }
+        },
+        "block_order": [
+          "f5b76166-6f76-41b9-b788-54dfbf2dbf17"
+        ],
         "settings": {
           "fade_effect": "on"
         }
