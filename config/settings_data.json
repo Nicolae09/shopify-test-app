@@ -73,10 +73,24 @@
             "settings": {
               "popup_title": "Title"
             }
+          },
+          "3d137e31-1971-4ec5-8e31-482d81f46445": {
+            "type": "popup_message",
+            "settings": {
+              "popup_message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, voluptatibus."
+            }
+          },
+          "492c9728-287d-4751-9a2e-7902e8a8102f": {
+            "type": "popup_message",
+            "settings": {
+              "popup_message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, voluptatibus."
+            }
           }
         },
         "block_order": [
-          "d0e95a92-d288-4784-8560-2eabe8145646"
+          "d0e95a92-d288-4784-8560-2eabe8145646",
+          "3d137e31-1971-4ec5-8e31-482d81f46445",
+          "492c9728-287d-4751-9a2e-7902e8a8102f"
         ],
         "settings": {
           "fade_effect": "on"
