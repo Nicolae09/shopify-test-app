@@ -26,7 +26,13 @@ class GlobalPopup {
     }
 
     _closePopup() {
-        this.elements.globalPopup.remove();
+        const fadeTimer = activeFadeEffect ? 1000 : 0;
+
+        this.elements.globalPopup.classList.add('popup--fade');
+
+        setTimeout(() => {
+            this.elements.globalPopup.remove();
+        }, fadeTimer);
     }
 
     _handleClosePopup = () => {

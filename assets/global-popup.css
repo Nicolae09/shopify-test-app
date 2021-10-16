@@ -34,3 +34,11 @@
     background-color: red;
     border-radius: 50%;
 }
+
+.popup--fade-effect {
+    transition: all 1s ease-out;
+}
+
+.popup--fade {
+    opacity: 0;
+}

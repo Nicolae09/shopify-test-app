@@ -2,7 +2,11 @@
 
 <script src="{{ 'global-popup.js' | asset_url }}" defer></script>
 
-<div class="global-popup">
+<div class="global-popup {% if section.blocks[0].settings.fade_effect == "on" %}popup--fade-effect{% endif %}">
+    {% if section.blocks[0].settings.fade_effect == "on" %}
+        {%- assign activeFadeEffect = "true" -%}
+    {% endif %}
+
     <div class="global-popup__box">
         <span class="global-popup__box-close">x</span>
         <h3 class="global-popup__box-title">{{ section.settings.popup_title }}</h3>
@@ -19,6 +23,8 @@
 </div>
 
 <script>
+    const activeFadeEffect = `{{ activeFadeEffect }}`;
+
     window.onload = () => {
         typeof GlobalPopup !== 'undefined' && new GlobalPopup();
     }
