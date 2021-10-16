@@ -67,9 +67,19 @@
       },
       "global-popup": {
         "type": "global-popup",
+        "blocks": {
+          "d0e95a92-d288-4784-8560-2eabe8145646": {
+            "type": "popup_title",
+            "settings": {
+              "popup_title": "Title"
+            }
+          }
+        },
+        "block_order": [
+          "d0e95a92-d288-4784-8560-2eabe8145646"
+        ],
         "settings": {
-          "popup_title": "Grinteq Presentation Project",
-          "popup_message": "This website is built using the Shopify platform, please feel free to explore. But keep in mind the development for this project was very limited since it is only a presentation project."
+          "fade_effect": "on"
         }
       }
     },
