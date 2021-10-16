@@ -11,6 +11,15 @@
         <span class="global-popup__box-close">x</span>
         <h3 class="global-popup__box-title">{{ section.blocks[0].settings.popup_title }}</h3>
 
+        {% for block in section.blocks %}
+            {% case block.type %}
+                {% when 'popup_message' %}
+                    <p class="global-popup__box-message">
+                        {{ block.settings.popup_message }}
+                    </p>
+            {% endcase %}
+        {% endfor %}
+
         <button
                 type="button"
                 class="global-popup__box-accept"
