@@ -71,19 +71,19 @@
           "f5b76166-6f76-41b9-b788-54dfbf2dbf17": {
             "type": "popup_title",
             "settings": {
-              "popup_title": "Title"
+              "popup_title": "Grinteq Demo Project"
             }
           },
           "68c18c86-0867-49a2-a601-6321947d59dd": {
             "type": "popup_message",
             "settings": {
-              "popup_message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, voluptatibus."
+              "popup_message": "This website was built on top of the Shopify platform. Feel free to explore however you like"
             }
           },
           "0f57d430-505f-4ef8-a82b-8ac0b304ea82": {
             "type": "popup_message",
             "settings": {
-              "popup_message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, voluptatibus."
+              "popup_message": "But please keep in mind that the functionality and design is limited, as this is just a demo project."
             }
           }
         },
